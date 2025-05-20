@@ -14,7 +14,16 @@
       A mesma "ciência" vale para o cliente 2 e o gateway 2.</blockquote>
     <hr>
       Por fim, basta apenas que seja baixada as bibliotecas utilizadas.
-
+    <br>
+    <h2>
+      Protocolo escolhida:
+    </h2>
+    O protocolo escolhido foi o protocolo UDP, tendo em vista que se trata de um protocolo não orientado a conexão, o mesmo é mais simples de ser executado.
+    <hr>
+    <h2>
+      Topologia escolhida:
+    </h2>
+   Topologia bridge (criam uma rede virtual dentro do Docker host para que os contêineres se comuniquem entre si. São de mais fácil implementação).  
   </body>
 </html>
 
