@@ -48,8 +48,9 @@ class ClientThread(threading.Thread):
 
             address, mensagemEnvio = self.ajeitaMsg(destinos)
             try:
+                print('\n\n',address, mensagemEnvio,'\n\n')
                 self.enviaSolicitacaoMsg(address, mensagemEnvio)
-                print('deu certo')
+                print('Enviado')
             except:
                 print('Caminho inexistente!')
             
@@ -73,6 +74,7 @@ while(True):
 
         print('aguardando conexao...')
         con, cliente = serv_socket.accept() #servidor aguardando conexao
+        print(con)
         #recebe = con.recv(1024) #define que os pacotes recebidos sao ate 1024 bytes
         #print(cliente[0])
         cliente = ClientThread(cliente[0], con, cliente)
